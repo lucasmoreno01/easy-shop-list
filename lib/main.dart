@@ -1,3 +1,5 @@
+import 'package:easy_shop_list/core/theme/app_theme.dart';
+import 'package:easy_shop_list/features/splash/splash_view.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -9,12 +11,12 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
-      ),
+    return MaterialApp(
+      home: const SplashView(),
+      title: 'Easy Shop List',
+      theme: AppTheme.light,
+      darkTheme: AppTheme.dark,
+      themeMode: ThemeMode.system,
     );
   }
 }
