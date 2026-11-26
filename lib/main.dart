@@ -1,9 +1,10 @@
 import 'package:easy_shop_list/core/theme/app_theme.dart';
 import 'package:easy_shop_list/features/splash/splash_view.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 void main() {
-  runApp(const MainApp());
+  runApp(ProviderScope(child: const MainApp()));
 }
 
 class MainApp extends StatelessWidget {
